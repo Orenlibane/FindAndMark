@@ -9,3 +9,10 @@ basic chrome extension for finding text in elements in a page and marking them a
 * make history of searches and what was found
 * update code so main function is in diffrent file
 
+## How to use: 
+* clone the project
+* enter chrome 
+    -> more tools 
+    -> extensions 
+    -> mark Developer mode 
+    -> Load unpacked and choose the cloned library
