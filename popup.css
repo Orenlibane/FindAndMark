@@ -1,0 +1,23 @@
+.popup-wrapper {
+border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#changeColor {
+    height: 30px;
+    width: 70%;
+    outline: none;
+}
+
+#color-picker {
+    height: 27px;
+    width: 20%;
+}
+
+#control-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
