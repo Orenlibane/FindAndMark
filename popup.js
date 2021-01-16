@@ -10,7 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     button.addEventListener("click", () => {
         let inputBtnValue = document.getElementById('findMarkInput').value;
-        let chosenColor = document.getElementById('color-picker').value;
+        let fontChosenColor = document.getElementById('color-picker').value;
+        let backgroundChosenColor = document.getElementById('background-picker').value;
+        let chosenIcon = document.getElementById('icon-picker').value;
 
         inputBtnValue = String(inputBtnValue);
         console.log(inputBtnValue);
@@ -28,8 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
             switch (curr.childNodes[i].nodeType) {
                 case Node.TEXT_NODE : // 3
                     if (curr.childNodes[i].textContent.match(word)) {
-                        curr.style.color = '${chosenColor}';
-                        curr.style.background = 'black';
+                        curr.style.color = '${fontChosenColor}';
+                        curr.style.background = '${backgroundChosenColor}';
+                        curr.innerText += '${chosenIcon}'
                     }
                     break;
                 case Node.ELEMENT_NODE : // 1

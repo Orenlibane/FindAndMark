@@ -6,13 +6,32 @@
 </head>
 <body>
 <section class="popup-wrapper">
-<h3>Lets Mark Text we want</h3>
+    <h3>Lets Mark Text we want</h3>
     <input type="text" id="findMarkInput" placeholder="click me" onchange="findAndMark($event)">
-<div id="control-wrap">
-    <button id="changeColor">&#128269 find and mark</button>
-    <input type="color" onchange="changeColor($event)" id="color-picker">
-</div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div id="control-wrap">
+        <button id="changeColor">&#128269 find and mark</button>
+        <div class="inputs-controllers">
+            <div class="font-color-input">
+                <label for="color-picker">Font color</label>
+                <input type="color" id="color-picker">
+            </div>
+            <div class="background-color-input">
+                <label for="color-picker">Back color</label>
+                <input type="color" id="background-picker">
+            </div>
+            <div class="icon-picker-select">
+                <label for="color-picker">Icon Picker</label>
+                <select id="icon-picker">
+                    <option value="&#9200">&#9200</option>
+                    <option value="&#128221">&#128221</option>
+                    <option value="&#128221">&#128221</option>
+                    <option value="&#128205">&#128205</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </section>
 <script src="popup.js"></script>
 </body>
