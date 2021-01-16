@@ -5,6 +5,7 @@ basic chrome extension for finding text in elements in a page and marking them a
 
 ## TODO: 
 * add options to look for word/element
-* change backgrond color
+* make ReadMe logo image smaller
+* make history of searches and what was found
 * update code so main function is in diffrent file
 
